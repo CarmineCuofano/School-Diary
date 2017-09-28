@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BradleyHand-Bold.ttf">
+            <string>BradleyHandITCTT-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Image Header View" customClass="ImageHeaderView" customModule="School_Diary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="einstein" translatesAutoresizingMaskIntoConstraints="NO" id="uRR-3r-hLN">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goS-YT-zeY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EO1-p2-sbS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cj-UW-El4">
+                                <rect key="frame" x="8" y="8" width="304" height="144"/>
+                                <string key="text">La scuola fa lo stesso lavoro dei muratori: costruisce una base solida, ma deve essere il proprietario a dare gli ultimi ritocchi.</string>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="9Cj-UW-El4" firstAttribute="leading" secondItem="EO1-p2-sbS" secondAttribute="leadingMargin" id="7xd-T7-JBM"/>
+                            <constraint firstItem="9Cj-UW-El4" firstAttribute="bottom" secondItem="EO1-p2-sbS" secondAttribute="bottomMargin" id="nGB-HU-HRv"/>
+                            <constraint firstItem="9Cj-UW-El4" firstAttribute="trailing" secondItem="EO1-p2-sbS" secondAttribute="trailingMargin" id="q0X-Cy-tZh"/>
+                            <constraint firstItem="9Cj-UW-El4" firstAttribute="top" secondItem="EO1-p2-sbS" secondAttribute="topMargin" id="xlg-DT-WrA"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uRR-3r-hLN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1yv-bG-bYs"/>
+                <constraint firstItem="goS-YT-zeY" firstAttribute="leading" secondItem="uRR-3r-hLN" secondAttribute="leading" id="HIi-pg-8v9"/>
+                <constraint firstItem="uRR-3r-hLN" firstAttribute="top" secondItem="goS-YT-zeY" secondAttribute="top" id="Hio-PT-OM3"/>
+                <constraint firstItem="goS-YT-zeY" firstAttribute="trailing" secondItem="uRR-3r-hLN" secondAttribute="trailing" id="PoJ-RT-WpV"/>
+                <constraint firstAttribute="bottom" secondItem="uRR-3r-hLN" secondAttribute="bottom" id="RnZ-v4-Oth"/>
+                <constraint firstItem="uRR-3r-hLN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bAD-pO-hak"/>
+                <constraint firstItem="goS-YT-zeY" firstAttribute="bottom" secondItem="uRR-3r-hLN" secondAttribute="bottom" id="lY2-tr-VVd"/>
+                <constraint firstAttribute="trailing" secondItem="goS-YT-zeY" secondAttribute="trailing" id="sQI-Xz-Qt0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="blur" destination="goS-YT-zeY" id="5ww-9d-Z5p"/>
+            </connections>
+            <point key="canvasLocation" x="255" y="192"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="einstein" width="1280" height="960"/>
+    </resources>
+</document>
