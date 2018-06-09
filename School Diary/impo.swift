@@ -6,19 +6,23 @@
 //  Copyright © 2017 Yuji Hato. All rights reserved.
 //
 
-import UIKit
+import  UIKit
 
 class impo: UITableViewController {
 
-    let info : [[(title:String,image:UIImage,segueVCId:String)]] = [[(title:"Materie",image:#imageLiteral(resourceName: "book"),segueVCId:"addMateria")]]
 
+    let info : [[(title:String,image:UIImage,segueVCId:String,act:Selector? )]] = [[(title:"Materie",image:#imageLiteral(resourceName: "book"),segueVCId:"addMateria",act:nil),(title:"Il nostro facebook",image:#imageLiteral(resourceName: "fb"),segueVCId:"addMateria",act: #selector(impo.apriFB)),(title:"Ringraziamenti",image:#imageLiteral(resourceName: "info"),segueVCId:"credits",act: nil)]]
+
+    @objc func apriFB () {
+        self.openFaceBookUrl()
+    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavigationBarItem()
         self.title = "Impostazioni"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -49,6 +53,10 @@ class impo: UITableViewController {
         return cell
     }
 
+    func openVc(_ id:String) {
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: id) else { return }
+        self.show(vc, sender: self)
+    }
 
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -61,8 +69,11 @@ class impo: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: info[indexPath.section][indexPath.row].segueVCId) else { return }
-        self.show(vc, sender: self)
+        if let act = info[indexPath.section][indexPath.row].act {
+            perform(act)
+        } else {
+            self.openVc(info[indexPath.section][indexPath.row].segueVCId)
+        }
     }
 
 }

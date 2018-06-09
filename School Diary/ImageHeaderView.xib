@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cj-UW-El4">
-                                <rect key="frame" x="8" y="8" width="304" height="144"/>
+                                <rect key="frame" x="8" y="74" width="304" height="86"/>
                                 <string key="text">La scuola fa lo stesso lavoro dei muratori: costruisce una base solida, ma deve essere il proprietario a dare gli ultimi ritocchi.</string>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -36,9 +40,9 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="9Cj-UW-El4" firstAttribute="leading" secondItem="EO1-p2-sbS" secondAttribute="leadingMargin" id="7xd-T7-JBM"/>
-                            <constraint firstItem="9Cj-UW-El4" firstAttribute="bottom" secondItem="EO1-p2-sbS" secondAttribute="bottomMargin" id="nGB-HU-HRv"/>
+                            <constraint firstItem="9Cj-UW-El4" firstAttribute="bottom" secondItem="EO1-p2-sbS" secondAttribute="bottomMargin" constant="8" id="nGB-HU-HRv"/>
                             <constraint firstItem="9Cj-UW-El4" firstAttribute="trailing" secondItem="EO1-p2-sbS" secondAttribute="trailingMargin" id="q0X-Cy-tZh"/>
-                            <constraint firstItem="9Cj-UW-El4" firstAttribute="top" secondItem="EO1-p2-sbS" secondAttribute="topMargin" id="xlg-DT-WrA"/>
+                            <constraint firstItem="9Cj-UW-El4" firstAttribute="top" secondItem="EO1-p2-sbS" secondAttribute="topMargin" constant="66" id="xlg-DT-WrA"/>
                         </constraints>
                     </view>
                     <blurEffect style="extraLight"/>

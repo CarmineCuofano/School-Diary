@@ -13,6 +13,7 @@ class detailVoti: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var table: UITableView!
     @IBOutlet var switcher: UISegmentedControl!
     var indexOfMateria: Int!
+    @IBOutlet var chart: charts!
     
     @IBAction func changeSegment(_ sender: UISegmentedControl) {
         self.table.reloadData()
@@ -23,19 +24,27 @@ class detailVoti: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Do any additional setup after loading the view.
         self.table.delegate = self
         self.table.dataSource = self
+        self.changeTitle()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.table.reloadData()
+        self.changeTitle()
     }
-    
+
+    func changeTitle() {
+        title = "\(Datamanager.sharedIntance.current.materie[indexOfMateria].nome) \(Datamanager.sharedIntance.current.materie[indexOfMateria].voti.media)".replacingOccurrences(of: "nan", with: "")
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        let number = Datamanager.sharedIntance.current.materie[indexOfMateria].voti.filtraPer(index: switcher.selectedSegmentIndex).map { $0.voto }
+        self.chart.setChart(info: number)
         return 1
     }
     
@@ -61,7 +70,7 @@ class detailVoti: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         let model = Datamanager.sharedIntance.current.materie[indexOfMateria].voti.filtraPer(index: switcher.selectedSegmentIndex)[indexPath.row]
-        guard let indexOf = Datamanager.sharedIntance.current.materie[indexOfMateria].voti.index(of: model) else { print("no") ; return }
+        guard let indexOf = Datamanager.sharedIntance.current.materie[indexOfMateria].voti.index(of: model) else { return }
         Datamanager.sharedIntance.current.materie[indexOfMateria].voti.remove(at: indexOf)
         Datamanager.sharedIntance.saveInfo()
         self.table.reloadData()

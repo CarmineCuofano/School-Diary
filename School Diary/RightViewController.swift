@@ -58,14 +58,13 @@ class RightViewController : UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     func calculateVotes (materia: materieModel)  -> (scritti:[Double], orali:[Double], pratici:[Double], generale: [Double]) {
-        let scrittiToRet = self.calculateNumber(voti: materia.voti.scritti.flatMap({ (model) -> Double in model.voto }), goal: materia.goal)
-        let oraliToRet = self.calculateNumber(voti: materia.voti.orali.flatMap({ (model) -> Double in model.voto }), goal: materia.goal)
-        let praticiToRet = self.calculateNumber(voti: materia.voti.pratici.flatMap({ (model) -> Double in model.voto }), goal: materia.goal)
-        let generalToRet = self.calculateNumber(voti: materia.voti.flatMap({ (model) -> Double in model.voto }), goal: materia.goal)
+        let scrittiToRet = self.calculateNumber(voti: materia.voti.scritti.compactMap({ (model) -> Double in model.voto }), goal: materia.goal)
+        let oraliToRet = self.calculateNumber(voti: materia.voti.orali.compactMap({ (model) -> Double in model.voto }), goal: materia.goal)
+        let praticiToRet = self.calculateNumber(voti: materia.voti.pratici.compactMap({ (model) -> Double in model.voto }), goal: materia.goal)
+        let generalToRet = self.calculateNumber(voti: materia.voti.compactMap({ (model) -> Double in model.voto }), goal: materia.goal)
         return (scritti:scrittiToRet, orali:oraliToRet, pratici:praticiToRet, generale: generalToRet)
     }
-
-
+                                                    
     func calculateNumber (voti: [Double] ,goal:Double) -> [Double] {
         if goal > 10 || goal < 0 { return [] }
         let calculedVoto = ( goal * Double(voti.count + 1) ) - voti.reduce(0, +)

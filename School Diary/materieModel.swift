@@ -13,7 +13,7 @@ class materieModel: NSObject , NSCoding{
     var nome: String, prof:String?, aula:String?,colore:UIColor,goal: Double,customInfo:String?, voti: [votiModel]
 
     override init() {
-        self.nome = "Materia"
+        self.nome = ""
         self.prof = ""
         self.aula = ""
         self.colore = .clear

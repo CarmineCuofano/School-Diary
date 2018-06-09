@@ -649,6 +649,7 @@ open class SlideMenuController: UIViewController, UIGestureRecognizerDelegate {
         } else {
             openLeft()
         }
+
     }
     
     open func isLeftOpen() -> Bool {

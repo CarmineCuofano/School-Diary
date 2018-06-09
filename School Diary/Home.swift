@@ -9,7 +9,7 @@
 import UIKit
 typealias indexOrarioType = (row:Int,descrizione:String)
 
-class Home: UIViewController, SlideMenuControllerDelegate, UICollectionViewDelegate,UICollectionViewDataSource, UITableViewDelegate,UITableViewDataSource {
+class Home: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource, UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet var previsioneLabel: UILabel!
     @IBOutlet var collectInsufficienze: UICollectionView!
@@ -43,7 +43,7 @@ class Home: UIViewController, SlideMenuControllerDelegate, UICollectionViewDeleg
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cella = tableView.dequeueReusableCell(withIdentifier: "cella", for: indexPath)
         let  info = Datamanager.sharedIntance.current.orario[indexOfTable.row][indexPath.row]
-        cella.textLabel?.text = info.materia.nome.isEmpty ? "Materia" :  info.materia.nome
+        cella.textLabel?.text = info.materia.nome.isEmpty ? "-" :  info.materia.nome
         cella.detailTextLabel?.text = info.subtitle.isEmpty ? "-" :  info.subtitle
         return cella
 
@@ -62,11 +62,13 @@ class Home: UIViewController, SlideMenuControllerDelegate, UICollectionViewDeleg
         self.loadPrev()
     }
 
+
     func loadPrev() {
         let prev = self.getPrev()
         self.previsioneLabel.text = prev.string
         self.previsioneLabel.textColor = prev.colore
         self.tableView.reloadData()
+        self.collectInsufficienze.reloadData()
     }
 
     func getPrev() -> (string:String, colore:UIColor) {

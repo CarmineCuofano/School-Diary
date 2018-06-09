@@ -29,6 +29,7 @@
 		C5F179CE1BEB2A5900EEDD9A /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F179CD1BEB2A5900EEDD9A /* UIImage.swift */; };
 		C5F179D01BEB2CB500EEDD9A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F179CF1BEB2CB500EEDD9A /* UIView.swift */; };
 		C5F179D21BEB2FAF00EEDD9A /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F179D11BEB2FAF00EEDD9A /* UIColor.swift */; };
+		C622A97E1F7EA8B600DF3266 /* credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622A97D1F7EA8B600DF3266 /* credits.swift */; };
 		C63709461F6C7EA8000743FF /* orario.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63709451F6C7EA8000743FF /* orario.swift */; };
 		C6494BF01F5A2B07008395DD /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD8CB01F491CC100115052 /* UITextView.swift */; };
 		C64D45BB1F45D31D00DBC4D2 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D45BA1F45D31D00DBC4D2 /* Home.swift */; };
@@ -57,6 +58,8 @@
 		C6CFDBB11F57136B00BC7DB0 /* selectSegCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFDBB01F57136B00BC7DB0 /* selectSegCell.swift */; };
 		C6CFDBB31F5713AE00BC7DB0 /* votoAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFDBB21F5713AE00BC7DB0 /* votoAddCell.swift */; };
 		C6CFDBB51F5713CD00BC7DB0 /* selectDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CFDBB41F5713CD00BC7DB0 /* selectDateCell.swift */; };
+		C6DF4FDF1FB51509000DCA5A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6DF4FDE1FB51509000DCA5A /* Launch Screen.storyboard */; };
+		C6EB4FCD1F7FE7B700CE116F /* charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB4FCC1F7FE7B700CE116F /* charts.swift */; };
 		C6EB9B3B1F4B318700E37020 /* votiMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB9B3A1F4B318700E37020 /* votiMainCell.swift */; };
 		C6EB9B3D1F4B33BD00E37020 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB9B3C1F4B33BD00E37020 /* Array.swift */; };
 		C6EB9B3F1F4B3BB600E37020 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EB9B3E1F4B3BB600E37020 /* Number.swift */; };
@@ -105,6 +108,7 @@
 		C5F179CD1BEB2A5900EEDD9A /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		C5F179CF1BEB2CB500EEDD9A /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		C5F179D11BEB2FAF00EEDD9A /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C622A97D1F7EA8B600DF3266 /* credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = credits.swift; sourceTree = "<group>"; };
 		C63709451F6C7EA8000743FF /* orario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orario.swift; sourceTree = "<group>"; };
 		C64D45BA1F45D31D00DBC4D2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		C64D45BC1F45D32800DBC4D2 /* Voti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voti.swift; sourceTree = "<group>"; };
@@ -115,7 +119,6 @@
 		C66A411A1F4743CB00E1A711 /* UIViewX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
 		C66A411D1F4745E700E1A711 /* addMaterieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMaterieCell.swift; sourceTree = "<group>"; };
 		C66AAC9F1F4B4C8F00F22E6E /* detailVoti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailVoti.swift; sourceTree = "<group>"; };
-		C67AAF001F6C85FA00117705 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		C67D26F01F6E784B00DB1631 /* homeCollect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCollect.swift; sourceTree = "<group>"; };
 		C67ECAD71F474239009EA664 /* addMaterie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMaterie.swift; sourceTree = "<group>"; };
 		C68A38021F48769500694F46 /* detailCollectionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailCollectionColor.swift; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 		C6CFDBB01F57136B00BC7DB0 /* selectSegCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectSegCell.swift; sourceTree = "<group>"; };
 		C6CFDBB21F5713AE00BC7DB0 /* votoAddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = votoAddCell.swift; sourceTree = "<group>"; };
 		C6CFDBB41F5713CD00BC7DB0 /* selectDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectDateCell.swift; sourceTree = "<group>"; };
+		C6DF4FDE1FB51509000DCA5A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C6EB4FCC1F7FE7B700CE116F /* charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = charts.swift; sourceTree = "<group>"; };
 		C6EB9B3A1F4B318700E37020 /* votiMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = votiMainCell.swift; sourceTree = "<group>"; };
 		C6EB9B3C1F4B33BD00E37020 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		C6EB9B3E1F4B3BB600E37020 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
@@ -213,8 +218,8 @@
 			children = (
 				C539E64D1A315E87003B7CC7 /* Main.storyboard */,
 				C539E6461A315E87003B7CC7 /* AppDelegate.swift */,
-				C67AAF001F6C85FA00117705 /* LaunchScreen.xib */,
 				C539E6501A315E87003B7CC7 /* Images.xcassets */,
+				C6DF4FDE1FB51509000DCA5A /* Launch Screen.storyboard */,
 				C539E6451A315E87003B7CC7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -300,6 +305,14 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		C622A97A1F7EA85200DF3266 /* credits */ = {
+			isa = PBXGroup;
+			children = (
+				C622A97D1F7EA8B600DF3266 /* credits.swift */,
+			);
+			name = credits;
+			sourceTree = "<group>";
+		};
 		C63709441F6C7E34000743FF /* Orario */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,7 +337,6 @@
 		C6732B0F1F4B1B150028C854 /* Materie */ = {
 			isa = PBXGroup;
 			children = (
-				C6A941F61F4738EF00B32D44 /* impo.swift */,
 				C67ECAD71F474239009EA664 /* addMaterie.swift */,
 				C68A38061F48782C00694F46 /* detailMateria.swift */,
 				C66A411C1F4745CC00E1A711 /* cells */,
@@ -374,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				C64D45BC1F45D32800DBC4D2 /* Voti.swift */,
+				C6EB4FCC1F7FE7B700CE116F /* charts.swift */,
 				C66AAC9F1F4B4C8F00F22E6E /* detailVoti.swift */,
 				C6CFDBAE1F57131900BC7DB0 /* aggiungiVoti.swift */,
 				C6732B121F4B30E80028C854 /* Cells */,
@@ -384,6 +397,8 @@
 		C6A941FB1F47414000B32D44 /* Impostazioni */ = {
 			isa = PBXGroup;
 			children = (
+				C6A941F61F4738EF00B32D44 /* impo.swift */,
+				C622A97A1F7EA85200DF3266 /* credits */,
 				C6732B0F1F4B1B150028C854 /* Materie */,
 			);
 			name = Impostazioni;
@@ -442,7 +457,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Carmine Cuofano";
 				TargetAttributes = {
 					C539E6401A315E87003B7CC7 = {
@@ -476,6 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DF4FDF1FB51509000DCA5A /* Launch Screen.storyboard in Resources */,
 				C5498C801BE897660076A7C5 /* ImageHeaderView.xib in Resources */,
 				C5BF6A841BEEF1E70064C18E /* DataTableViewCell.xib in Resources */,
 				0E75C5A61BE3CAFE00844634 /* Info.plist in Resources */,
@@ -527,10 +543,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-School Diary/Pods-School Diary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/SpreadsheetView/SpreadsheetView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpreadsheetView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,6 +568,7 @@
 				C6CFDBB51F5713CD00BC7DB0 /* selectDateCell.swift in Sources */,
 				C5BF6A8E1BF34A8B0064C18E /* UIApplication.swift in Sources */,
 				C662F32C1F49033B006CE2FF /* cellWithField.swift in Sources */,
+				C6EB4FCD1F7FE7B700CE116F /* charts.swift in Sources */,
 				C5BD39E01A6CDC8100D0AF95 /* UIViewController.swift in Sources */,
 				C5C1CE611A70F3B600B6E411 /* UITableViewExtension.swift in Sources */,
 				C65939C31F70423D005CB519 /* cells.swift in Sources */,
@@ -583,6 +602,7 @@
 				C5BA8AA61A43E2EF00863FB9 /* SlideMenuController.swift in Sources */,
 				C6CE67031F467F35009D17D3 /* orarioModel.swift in Sources */,
 				C6CE66FB1F466EB2009D17D3 /* materieModel.swift in Sources */,
+				C622A97E1F7EA8B600DF3266 /* credits.swift in Sources */,
 				C67ECAD81F474239009EA664 /* addMaterie.swift in Sources */,
 				C6BE47591F48F7B800E90AAD /* dettaglioMateriaInfo.swift in Sources */,
 				C6CE66FF1F467836009D17D3 /* Date.swift in Sources */,
@@ -621,12 +641,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -654,7 +676,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -677,12 +699,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -702,7 +726,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -723,9 +747,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U78XY2WMXB;
 				INFOPLIST_FILE = "School Diary/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Carmine-Cuofano.SchoolDiary";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Carmine-Cuofano.School-Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
@@ -744,10 +768,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U78XY2WMXB;
 				INFOPLIST_FILE = "School Diary/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Carmine-Cuofano.SchoolDiary";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Carmine-Cuofano.School-Diary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;

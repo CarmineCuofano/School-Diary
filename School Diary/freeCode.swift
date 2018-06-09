@@ -33,3 +33,21 @@ extension weekDays {
     var descrizione : String { return String(describing: self) }
 }
 
+var facebookId : String = "576165975898067"
+
+extension UIViewController {
+    func openFaceBookUrl() {
+        guard let facebookURLGuard = URL(string: "fb://page/?id=\(facebookId)") else {
+            return
+        }
+
+        if UIApplication.shared.canOpenURL(facebookURLGuard) {
+            UIApplication.shared.open(facebookURLGuard, options: [:], completionHandler: nil)
+        } else {
+            guard let webpageURL = URL(string: "https://www.facebook.com/\(facebookId)") else {
+                return
+            }
+            Datamanager.sharedIntance.openUrl(url: webpageURL, inVc: self)
+        }
+    }
+}

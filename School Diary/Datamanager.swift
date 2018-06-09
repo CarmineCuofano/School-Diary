@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 import AudioToolbox
 
 class Datamanager: NSObject {
@@ -42,6 +43,13 @@ class Datamanager: NSObject {
             UserDefaults.standard.set(encodedData, forKey: "secondQuad")
         }
             UserDefaults.standard.synchronize()
+    }
+
+
+    func openUrl(url:URL,inVc:UIViewController) {
+        let sfController = SFSafariViewController(url: url)
+        sfController.preferredBarTintColor = inVc.view.backgroundColor!
+        inVc.present(sfController, animated: true, completion: nil)
     }
 
 
