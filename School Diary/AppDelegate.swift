@@ -25,7 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rightViewController = storyboard.instantiateViewController(withIdentifier: "RightViewController") as! RightViewController
         
         let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
-        
+
+
         UINavigationBar.appearance().tintColor = UIColor(hex: "689F38")
         
         leftViewController.homeViewController = nvc
